@@ -31,8 +31,8 @@ function CategorySearch() {
     </div>
         
         {/* Display List of Category  */}
-        <div className='grid grid-cols-3 mt-5 md:grid-cols-4 lg:grid-cols-6 '>
-        {categoryList.length>0?categoryList.map((item,index)=>index<6&&(
+        <div className='grid grid-cols-3 mt-5 md:grid-cols-4 lg:grid-cols-4'>
+        {categoryList.length>0?categoryList.map((item,index)=>index<4&&(
           <Link href={'/search/'+item.attributes.Name} key={index} className='flex 
           flex-col text-center items-center
           p-5 bg-blue-50 m-2 rounded-lg cursor-pointer
@@ -45,7 +45,7 @@ function CategorySearch() {
           </Link>
         ))
       :
-      [1,2,3,4,5,6].map((item,index)=>(
+      [1,2,3,4].map((item,index)=>(
         <div className=' bg-slate-200 m-2
        w-[130px] h-[120px] rounded-lg animate-pulse'>
             
