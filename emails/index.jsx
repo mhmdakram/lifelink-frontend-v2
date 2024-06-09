@@ -26,7 +26,7 @@ export const EmailTemplate = ({
     <Preview>Book Your Favorite Doctor</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Text style={Heading}>Lifelink</Text>
+        <h1>Lifelink</h1>
         <Text style={paragraph}>Hi,</Text>
         <Text style={paragraph}>
           Your Appointment with Doctor has been booked.
