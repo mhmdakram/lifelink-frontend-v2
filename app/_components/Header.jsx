@@ -93,7 +93,14 @@ function Header() {
                 className="cursor-pointer
              hover:bg-slate-100 p-2 rounded-md"
               >
-                <LogoutLink> Logout </LogoutLink>
+                <LogoutLink
+                  postLogoutRedirectURL={
+                    process.env.KINDE_POST_LOGOUT_REDIRECT_URL
+                  }
+                >
+                  {" "}
+                  Logout{" "}
+                </LogoutLink>
               </li>
             </ul>
           </PopoverContent>
