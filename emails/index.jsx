@@ -10,6 +10,7 @@ import {
   Section,
   Text,
 } from "@react-email/components";
+import { Heading1 } from "lucide-react";
 import * as React from "react";
 
 export const EmailTemplate = ({
@@ -25,13 +26,7 @@ export const EmailTemplate = ({
     <Preview>Book Your Favorite Doctor</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Img
-          src={`https://lifelink-frontend-v2.vercel.app/logo.svg`}
-          width="170"
-          height="50"
-          alt="Lifelink"
-          style={logo}
-        />
+        <Text style={Heading1}>Lifelink</Text>
         <Text style={paragraph}>Hi,</Text>
         <Text style={paragraph}>
           Your Appointment with Doctor has been booked.

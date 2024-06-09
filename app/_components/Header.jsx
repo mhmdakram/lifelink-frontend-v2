@@ -93,13 +93,8 @@ function Header() {
                 className="cursor-pointer
              hover:bg-slate-100 p-2 rounded-md"
               >
-                <LogoutLink
-                  postLogoutRedirectURL={
-                    process.env.KINDE_POST_LOGOUT_REDIRECT_URL
-                  }
-                >
-                  {" "}
-                  Logout{" "}
+                <LogoutLink postLogoutRedirectURL="https://lifelink-frontend-v2.vercel.app/">
+                  Logout
                 </LogoutLink>
               </li>
             </ul>
