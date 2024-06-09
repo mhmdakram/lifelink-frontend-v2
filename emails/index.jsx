@@ -12,10 +12,6 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
 export const EmailTemplate = ({
   UserName,
   Email,
@@ -30,7 +26,7 @@ export const EmailTemplate = ({
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${baseUrl}/logo.svg`}
+          src={`https://lifelink-frontend-v2.vercel.app/logo.svg`}
           width="170"
           height="50"
           alt="Lifelink"
