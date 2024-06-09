@@ -93,9 +93,7 @@ function Header() {
                 className="cursor-pointer
              hover:bg-slate-100 p-2 rounded-md"
               >
-                <LogoutLink postLogoutRedirectURL="https://lifelink-frontend-v2.vercel.app/">
-                  Logout
-                </LogoutLink>
+                <LogoutLink>Logout</LogoutLink>
               </li>
             </ul>
           </PopoverContent>

@@ -3,6 +3,7 @@ import {
   Button,
   Container,
   Head,
+  Heading,
   Hr,
   Html,
   Img,
@@ -10,7 +11,6 @@ import {
   Section,
   Text,
 } from "@react-email/components";
-import { Heading1 } from "lucide-react";
 import * as React from "react";
 
 export const EmailTemplate = ({
@@ -26,7 +26,7 @@ export const EmailTemplate = ({
     <Preview>Book Your Favorite Doctor</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Text style={Heading1}>Lifelink</Text>
+        <Text style={Heading}>Lifelink</Text>
         <Text style={paragraph}>Hi,</Text>
         <Text style={paragraph}>
           Your Appointment with Doctor has been booked.
