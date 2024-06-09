@@ -99,7 +99,7 @@ function Header() {
           </PopoverContent>
         </Popover>
       ) : (
-        <LoginLink postLoginRedirectURL="/">
+        <LoginLink>
           <Button>Login</Button>
         </LoginLink>
       )}

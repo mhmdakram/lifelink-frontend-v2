@@ -1,3 +1,4 @@
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -42,7 +43,10 @@ function DoctorList({ doctorList, heading = "Popular Doctors" }) {
                   <h2 className="text-gray-500 text-sm">
                     {doctor.attributes?.Address}
                   </h2>
-                  <Link href={"/details/" + doctor?.id} className="w-full">
+                  <LoginLink
+                    postLoginRedirectURL={"/details/" + doctor?.id}
+                    className="w-full"
+                  >
                     <h2
                       className="p-2 px-3 border-[1px] border-primary
                         text-primary rounded-full w-full text-center
@@ -52,7 +56,7 @@ function DoctorList({ doctorList, heading = "Popular Doctors" }) {
                     >
                       Book Now
                     </h2>
-                  </Link>
+                  </LoginLink>
                 </div>
               </div>
             ))
